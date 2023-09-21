@@ -1,0 +1,58 @@
+.contact {
+  background-color: #222;
+  padding: 92px 0 115px;
+  &__titel {
+    @include title($white-color, 40px, -1px);
+  }
+  &__input {
+    background-color: $white-color;
+    border: 1px solid $border-color;
+
+    height: 50px;
+    width: 455px;
+    @include title($input-text-color, 14px, -0.35px);
+    text-align: left;
+    padding: 12px 20px 21px 20px;
+  }
+  &__message {
+    fill: #fff;
+    stroke-width: 1px;
+    stroke: #ccc;
+    width: 458px;
+    height: 194px;
+    @include title($input-text-color, 14px, -0.35px);
+    text-align: left;
+    padding: 12px 20px 21px 20px;
+  }
+  &__btn {
+    background-color: $first-color;
+    width: 242px;
+    height: 68px;
+    color: $white-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+  }
+  &__form--wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 27px;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+}

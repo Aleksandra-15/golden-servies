@@ -1,0 +1,56 @@
+.adventage {
+  min-height: 550px;
+  padding: 109px 0 119px 0;
+  &__titel {
+    @include title($black-color, 24px, -1px);
+    margin-bottom: 113px;
+  }
+  &__subtitel {
+    margin: 0;
+    color: $black-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75px; /* 416.667% */
+    letter-spacing: -0.45px;
+  }
+  &__descr {
+    margin: 0;
+    color: $gray-color;
+    text-align: center;
+    font-family: RobotoSlab;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.35px;
+  }
+  &__item {
+    width: 274px;
+    height: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 3px solid $first-color;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
